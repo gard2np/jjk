@@ -1,13 +1,12 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
-
+import Quiz from "../components/Quiz";
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "치히로의 지장간 암기 도우미" },
+    { name: "치히로", content: "치히로의 지장간 암기 도우미" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <Quiz />;
 }
